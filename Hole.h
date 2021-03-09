@@ -45,7 +45,6 @@ private:
 
 private slots:
     void updateHole(State state);
-
 };
 
 #endif // HOLE_H

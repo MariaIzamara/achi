@@ -14,6 +14,18 @@
    <string>Achi</string>
   </property>
   <widget class="QWidget" name="centralwidget">
+   <property name="minimumSize">
+    <size>
+     <width>300</width>
+     <height>300</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>300</width>
+     <height>300</height>
+    </size>
+   </property>
    <property name="styleSheet">
     <string notr="true">#centralwidget { background: url(':/grid'); }</string>
    </property>
@@ -33,6 +45,206 @@
     <property name="spacing">
      <number>0</number>
     </property>
+    <item row="4" column="7">
+     <widget class="Hole" name="hole22">
+      <property name="minimumSize">
+       <size>
+        <width>100</width>
+        <height>100</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>100</width>
+        <height>100</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border: none;
+    outline: none;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>2</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>2</number>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="6">
+     <widget class="Hole" name="hole01">
+      <property name="minimumSize">
+       <size>
+        <width>100</width>
+        <height>100</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>100</width>
+        <height>100</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border: none;
+    outline: none;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>0</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>1</number>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="7">
+     <widget class="Hole" name="hole02">
+      <property name="minimumSize">
+       <size>
+        <width>100</width>
+        <height>100</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>100</width>
+        <height>100</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border: none;
+    outline: none;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>0</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>2</number>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="Hole" name="hole10">
+      <property name="minimumSize">
+       <size>
+        <width>100</width>
+        <height>100</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>100</width>
+        <height>100</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border: none;
+    outline: none;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>1</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>0</number>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="7">
+     <widget class="Hole" name="hole12">
+      <property name="minimumSize">
+       <size>
+        <width>100</width>
+        <height>100</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>100</width>
+        <height>100</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border: none;
+    outline: none;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+      <property name="row" stdset="0">
+       <number>1</number>
+      </property>
+      <property name="col" stdset="0">
+       <number>2</number>
+      </property>
+     </widget>
+    </item>
     <item row="0" column="0">
      <widget class="Hole" name="hole00">
       <property name="minimumSize">
@@ -73,127 +285,7 @@
       </property>
      </widget>
     </item>
-    <item row="0" column="1">
-     <widget class="Hole" name="hole01">
-      <property name="minimumSize">
-       <size>
-        <width>100</width>
-        <height>100</height>
-       </size>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>100</width>
-        <height>100</height>
-       </size>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QPushButton {
-    border: none;
-    outline: none;
-}</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>50</width>
-        <height>50</height>
-       </size>
-      </property>
-      <property name="flat">
-       <bool>true</bool>
-      </property>
-      <property name="row" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="col" stdset="0">
-       <number>1</number>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="2">
-     <widget class="Hole" name="hole02">
-      <property name="minimumSize">
-       <size>
-        <width>100</width>
-        <height>100</height>
-       </size>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>100</width>
-        <height>100</height>
-       </size>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QPushButton {
-    border: none;
-    outline: none;
-}</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>50</width>
-        <height>50</height>
-       </size>
-      </property>
-      <property name="flat">
-       <bool>true</bool>
-      </property>
-      <property name="row" stdset="0">
-       <number>0</number>
-      </property>
-      <property name="col" stdset="0">
-       <number>2</number>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="0">
-     <widget class="Hole" name="hole10">
-      <property name="minimumSize">
-       <size>
-        <width>100</width>
-        <height>100</height>
-       </size>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>100</width>
-        <height>100</height>
-       </size>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QPushButton {
-    border: none;
-    outline: none;
-}</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>50</width>
-        <height>50</height>
-       </size>
-      </property>
-      <property name="flat">
-       <bool>true</bool>
-      </property>
-      <property name="row" stdset="0">
-       <number>1</number>
-      </property>
-      <property name="col" stdset="0">
-       <number>0</number>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="1">
+    <item row="2" column="6">
      <widget class="Hole" name="hole11">
       <property name="minimumSize">
        <size>
@@ -233,47 +325,7 @@
       </property>
      </widget>
     </item>
-    <item row="1" column="2">
-     <widget class="Hole" name="hole12">
-      <property name="minimumSize">
-       <size>
-        <width>100</width>
-        <height>100</height>
-       </size>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>100</width>
-        <height>100</height>
-       </size>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QPushButton {
-    border: none;
-    outline: none;
-}</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>50</width>
-        <height>50</height>
-       </size>
-      </property>
-      <property name="flat">
-       <bool>true</bool>
-      </property>
-      <property name="row" stdset="0">
-       <number>1</number>
-      </property>
-      <property name="col" stdset="0">
-       <number>2</number>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="0">
+    <item row="4" column="0">
      <widget class="Hole" name="hole20">
       <property name="minimumSize">
        <size>
@@ -313,7 +365,7 @@
       </property>
      </widget>
     </item>
-    <item row="2" column="1">
+    <item row="4" column="6">
      <widget class="Hole" name="hole21">
       <property name="minimumSize">
        <size>
@@ -350,46 +402,6 @@
       </property>
       <property name="col" stdset="0">
        <number>1</number>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="2">
-     <widget class="Hole" name="hole22">
-      <property name="minimumSize">
-       <size>
-        <width>100</width>
-        <height>100</height>
-       </size>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>100</width>
-        <height>100</height>
-       </size>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QPushButton {
-    border: none;
-    outline: none;
-}</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>50</width>
-        <height>50</height>
-       </size>
-      </property>
-      <property name="flat">
-       <bool>true</bool>
-      </property>
-      <property name="row" stdset="0">
-       <number>2</number>
-      </property>
-      <property name="col" stdset="0">
-       <number>2</number>
       </property>
      </widget>
     </item>
