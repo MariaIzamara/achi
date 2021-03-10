@@ -111,7 +111,7 @@ Hole* Achi::holeAt(int row, int col) const {
 
 bool Achi::isGameOver(Hole* hole) {
     Achi::Player player = stateToPlayer(hole->state());
-    return this->checkRow(player, hole->col()) || this->checkCol(player, hole->row());
+    return this->checkRow(player, hole->col()) || this->checkCol(player, hole->row()) || this->checkDiagonal(player);
 }
 
 bool Achi::checkRow(Player player, int col) {
@@ -150,6 +150,30 @@ bool Achi::checkCol(Player player, int row) {
         }
     }
     return true;
+}
+
+bool checkState(Hole::State state, Hole* tmp) {
+    Q_ASSERT(tmp != 0);
+
+    switch (tmp->state()) {
+        case Hole::RedState:
+        case Hole::BlueState:
+            if (state != tmp->state())
+                return false;
+            break;
+        default:
+            return false;
+    }
+    return true;
+}
+
+bool Achi::checkDiagonal(Player player) {
+    Hole::State state = playerToState(player);
+
+    bool diagonal_right = checkState(state, this->holeAt(0, 0)) && checkState(state, this->holeAt(1, 1)) && checkState(state, this->holeAt(2, 2));
+    bool diagonal_left = checkState(state, this->holeAt(0, 2)) && checkState(state, this->holeAt(1, 1)) && checkState(state, this->holeAt(2, 0));
+
+    return diagonal_right || diagonal_left;
 }
 
 void Achi::switchPlayer() {
@@ -200,6 +224,8 @@ void Achi::move(Hole* hole) {
 QList<Hole*> Achi::findSelectable(Hole* hole) {
     QList<Hole*> list;
 
+    // qDebug() << QString("hole: (%1, %2)").arg(hole->row()).arg(hole->col());
+
     Hole* left = this->holeAt(hole->row() - 1, hole->col());
     if (isSelectable(left))
         list << left;
@@ -215,6 +241,26 @@ QList<Hole*> Achi::findSelectable(Hole* hole) {
     Hole* bottom = this->holeAt(hole->row(), hole->col() + 1);
     if (isSelectable(bottom))
         list << bottom;
+
+    int hole_value = hole->row() * 3 + hole->col();
+
+    if (hole_value%2 == 0) {
+        Hole* diagonal_left_up = this->holeAt(hole->row() - 1, hole->col() - 1);
+        if (isSelectable(diagonal_left_up))
+            list << diagonal_left_up;
+
+        Hole* diagonal_left_right = this->holeAt(hole->row() + 1, hole->col() - 1);
+        if (isSelectable(diagonal_left_right))
+            list << diagonal_left_right;
+
+        Hole* diagonal_right_up = this->holeAt(hole->row() - 1, hole->col() + 1);
+        if (isSelectable(diagonal_right_up))
+            list << diagonal_right_up;
+
+        Hole* diagonal_right_bottom = this->holeAt(hole->row() + 1, hole->col() + 1);
+        if (isSelectable(diagonal_right_bottom))
+            list << diagonal_right_bottom;
+    }
 
     return list;
 }

@@ -50,6 +50,7 @@ private:
     bool isGameOver(Hole* hole);
     bool checkRow(Player player, int col);
     bool checkCol(Player player, int row);
+    bool checkDiagonal(Player player);
     void switchPlayer();
 
     QList<Hole*> findSelectable(Hole* hole);
